@@ -11,7 +11,6 @@ public class App {
     public static void main(String[] args) {
         ApiContextInitializer.init();
         TelegramBotsApi telegram = new TelegramBotsApi();
-
         Bot bot = new Bot();
         try {
             telegram.registerBot(bot);
