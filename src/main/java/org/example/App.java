@@ -1,5 +1,10 @@
 package org.example;
 
+import javafx.application.Application;
+import org.example.context.Context;
+import org.example.view.Bot;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
