@@ -81,7 +81,7 @@ public class Weather {
                 if (!dayFor.equals(day)) {
                     break;
                 }
-                weatherString += "- "+ (((String) jsonDayFor.get("dt_txt")).replaceAll(".* ", "Сегодня в ") + " будет " + weatherObject.get("description") + ", а по температуре " + main.get("temp") + "°") + "\n";
+                weatherString += (((String) jsonDayFor.get("dt_txt")).replaceAll(".* ", "- в ") + " будет " + weatherObject.get("description") + ", а по температуре " + main.get("temp") + "°") + "\n";
             }
         }catch (IOException e){
             weatherString = "- траблы с сервисов апи";
