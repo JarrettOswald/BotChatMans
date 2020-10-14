@@ -44,6 +44,8 @@ public class Weather {
                 weatherDescription = weatherDescription.replaceAll("небольшая облачность", "\uD83C\uDF24");
                 weatherDescription = weatherDescription.replaceAll("облачно с прояснениями", "\uD83C\uDF25");
                 weatherDescription = weatherDescription.replaceAll("пасмурно", "☁");
+                weatherDescription = weatherDescription.replaceAll("небольшой дождь", "\uD83C\uDF26");
+                weatherDescription = weatherDescription.replaceAll("дождь", "\uD83C\uDF27");
 
                 double temp = (double) ((JSONObject) ((JSONObject) dayJson).get("main")).get("temp");
                 String[] dataTime = dataFull.split(" ");
