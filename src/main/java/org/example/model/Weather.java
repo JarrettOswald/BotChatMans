@@ -47,7 +47,7 @@ public class Weather {
                 weatherDescription = weatherDescription.replaceAll("небольшой дождь", "\uD83C\uDF26");
                 weatherDescription = weatherDescription.replaceAll("дождь", "\uD83C\uDF27");
 
-                double temp = (double) ((JSONObject) ((JSONObject) dayJson).get("main")).get("temp");
+                String temp = String.valueOf(((JSONObject) ((JSONObject) dayJson).get("main")).get("temp"));
                 String[] dataTime = dataFull.split(" ");
                 String timeHour = dataTime[1].replaceAll(":.*", "");
                 String[] s = dataTime[0].split("-");
