@@ -37,7 +37,7 @@ public class Controller {
     }
 
     private void parseMessage() {
-        if (update.getMessage().getText().contains("погода")) {
+        if (update.getMessage().getText().equals("Погода")) {
             isMessageForBot = true;
             setMessageWeather();
         }
